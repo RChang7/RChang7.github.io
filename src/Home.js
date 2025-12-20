@@ -12,7 +12,7 @@ const Home = () => {
         <div className="home">
             { error && <div>{error}</div>}
             {isPending && <div>Loading. . .</div>}
-            {Repos && <RepoList repos={Repos} title="All Repos" />}
+            {Repos && <RepoList repos={Repos} title="Most Recent Repos" display_count={3}/>}
         </div>
     );
 
