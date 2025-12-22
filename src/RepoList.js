@@ -17,7 +17,7 @@ const RepoList = ({repos, title, display_count}) => {
             <h2>{title}</h2>
             {filtered_repos.slice(0, display_count).map((repo) => (
                 <div className="repo-preview" key={repo.id}>
-                    <Link to={`/repos/${repo.name}`}>
+                    <Link to={`/allrepos/${repo.name}`}>
                     <h2>{repo.name.replace(/-/g, " ")}</h2>
                     <p>{repo.description}</p>
                     <p>Last updated: {new Date(repo.updated_at).toLocaleDateString("en-AU")}</p>
