@@ -12,9 +12,9 @@ const AllRepos = () => {
         <div className="allRepos">
             { error && <div>{error}</div>}
             {isPending && <div>Loading. . .</div>}
-            {repos && <RepoList repos={repos} title="All Repos" display_count={repos.length}/>}
+            {repos && <RepoList repos={repos} title="All Repositories" display_count={repos.length}/>}
         </div>
     );
 }
- 
+
 export default AllRepos;

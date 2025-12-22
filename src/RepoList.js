@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 
 const RepoList = ({repos, title, display_count}) => {
 
@@ -17,12 +17,12 @@ const RepoList = ({repos, title, display_count}) => {
             <h2>{title}</h2>
             {filtered_repos.slice(0, display_count).map((repo) => (
                 <div className="repo-preview" key={repo.id}>
-                    <a href={repo.html_url}>
+                    <Link to={`/repos/${repo.name}`}>
                     <h2>{repo.name.replace(/-/g, " ")}</h2>
                     <p>{repo.description}</p>
                     <p>Last updated: {new Date(repo.updated_at).toLocaleDateString("en-AU")}</p>
                     <p>Language: {repo.language}</p>
-                    </a>
+                    </Link>
 
                 </div>
             ))}
