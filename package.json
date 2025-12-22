@@ -1,7 +1,7 @@
 {
   "name": "website",
   "version": "0.1.0",
-  "homepage": "https://RChang7.github.io",
+  "homepage": "https://ryanstchang.dev",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
