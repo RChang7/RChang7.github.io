@@ -1,54 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 /* base styles */
+/* font & text */
 * {
   margin: 0;
+  box-sizing: border-box;
   font-family: "Quicksand";
-  color: #333;
+  color: var(--font_colour);
+  --background_colour: #333;
+  --primary_colour: #00ff00;
+  --font_colour: #ffffff;
 }
+
+html, body, #root {
+  height: 100%;
+}
+
+/* navbar */
 .navbar {
-  padding: 20px;
+  width: 100%;
+  padding: 20px 40px;
   display: flex;
   align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
+  background-color: var(background_colour);
 }
+
+
+.App  {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background_colour);
+}
+
 .navbar h1 {
-  color: #f1356d;
+  color: var(--primary_colour);
 }
+
 .navbar .links {
   margin-left: auto;
 }
+
 .navbar a {
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
 }
+
 .navbar a:hover {
-  color: #f1356d;
-}
-.content {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
+  color: var(--primary_colour);
 }
 
-/* blog previews / list */
+.content {
+  flex: 1;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: var(--background_colour);
+}
+
+/*  repo previews / list */
 .repo-preview {
   padding: 10px 16px;
   margin: 20px 0;
-  border-bottom: 1px solid #fafafa;
+  border-bottom: 1px solid var(--background_colour);
 }
+
 .repo-preview:hover {
   box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
 }
+
 .repo-preview h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: var(--primary_colour);
   margin-bottom: 8px;
 }
-.repo-preview a{
+
+.repo-preview a {
   text-decoration: none;
 }
 
@@ -57,6 +86,5 @@
   text-align: center;
   padding: 20px 0;
   margin-top: 40px;
-  color: #666;
   font-size: 14px;
 }
