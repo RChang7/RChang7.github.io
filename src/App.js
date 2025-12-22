@@ -16,7 +16,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/allrepos" element={<AllRepos />} />
             <Route path="/about" element={<About />} />
-            <Route path="/repos/:name" element={<RepoDetails />} />
+            <Route path="/allrepos/:name" element={<RepoDetails />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
