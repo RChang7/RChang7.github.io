@@ -16,6 +16,20 @@ html, body, #root {
   height: 100%;
 }
 
+.home .green_text {
+  color: var(--primary_colour);
+}
+
+.home .intro_section {
+  font-size: 1.6rem;
+}
+
+.home .contact-button {
+  padding: 10px 8px;
+  display: inline-block;
+}
+
+
 /* navbar */
 .navbar {
   width: 100%;

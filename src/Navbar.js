@@ -18,7 +18,7 @@ const Navbar = () => {
             <h1>Ryan Chang</h1>
             <div className="links">
                 <Link to="/">Home</Link>
-                <Link to="/allrepos">All Repos</Link>
+                <Link to="/allrepos">Projects</Link>
                 <Link to="/about">About Me</Link>
                 {/* <button onClick = {switchMode} className="mode-switcher">
                     {mode ? "Light Mode" : "Dark Mode"}
