@@ -39,6 +39,11 @@ html, body, #root {
   display: inline-block;
 }
 
+.home .tech_stack{
+  display: flex;
+  padding: 10px 0px;
+  gap: 9px;
+}
 
 /* navbar */
 .navbar {

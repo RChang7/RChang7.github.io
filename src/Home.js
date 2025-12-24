@@ -1,6 +1,6 @@
 import RepoList from './RepoList'
 import useFetch from './useFetch'
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaHtml5, FaLinkedin, FaPhp, FaPython, FaReact } from 'react-icons/fa';
 
 
 
@@ -8,6 +8,7 @@ const Home = () => {
 
     const{data: Repos, isPending, error} = useFetch('https://api.github.com/users/RChang7/repos');
     const contact_button_size = 30
+    const tech_stack_size = 50
 
     return (  
         <div className="home">
@@ -18,6 +19,14 @@ const Home = () => {
                 <p>I'm currently a student at the Queensland University of Technology <br />studying Information Technology and Engineering</p>
                 <a href="https://github.com/RChang7" className='contact-button'><FaGithub size={contact_button_size}/> </a>
                 <a href="https://www.linkedin.com/in/ryanchang-it/" className='contact-button'><FaLinkedin size={contact_button_size} /> </a>
+            </div>
+            <br/>
+            <h2 className='green_text'>Tools and Technologies</h2>
+            <div className='tech_stack'>
+                <FaPython size={tech_stack_size}/>
+                <FaReact size={tech_stack_size}/>
+                <FaHtml5 size={tech_stack_size}/>
+                <FaPhp size={tech_stack_size}/>
             </div>
 
             <br /><br /><br /><br /><br /><br /><br />
