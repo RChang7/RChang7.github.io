@@ -7,13 +7,23 @@
   box-sizing: border-box;
   font-family: "Quicksand";
   color: var(--font_colour);
-  --background_colour: #333;
-  --primary_colour: #00ff00;
-  --font_colour: #ffffff;
+  background-color: var(--background_colour);
 }
 
 html, body, #root {
   height: 100%;
+}
+
+.app_dark{
+   --background_colour: #333;
+   --primary_colour: #00ff00;
+   --font_colour: #ffffff;
+}
+
+.app_light{
+   --background_colour: #ffffff;
+   --primary_colour: #ff00f2;
+   --font_colour: #000000;
 }
 
 .home .green_text {

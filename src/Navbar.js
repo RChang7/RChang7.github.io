@@ -4,14 +4,9 @@ import { useState } from 'react';
 
 
 
-const Navbar = () => {
+const Navbar = ({isDarkMode, toggleThemeSwitch}) => {
 
-    // false is light mode, true is dark mode
-    const [mode, setMode] = useState(false);
 
-    const switchMode = () => {
-        setMode(!mode);
-    };
 
     return (
         <nav className="navbar">
@@ -20,9 +15,9 @@ const Navbar = () => {
                 <Link to="/">Home</Link>
                 <Link to="/allrepos">Projects</Link>
                 <Link to="/about">About Me</Link>
-                {/* <button onClick = {switchMode} className="mode-switcher">
-                    {mode ? "Light Mode" : "Dark Mode"}
-                </button> */}
+                <button onClick = {toggleThemeSwitch} className="mode-switcher">
+                    {isDarkMode ? "Dark Mode" : "Light Mode"}
+                </button>
             </div>
         </nav>
     );
