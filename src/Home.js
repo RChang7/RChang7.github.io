@@ -1,6 +1,11 @@
 import RepoList from './RepoList'
 import useFetch from './useFetch'
+import { Tooltip } from 'react-tooltip';
 import { FaGithub, FaHtml5, FaLinkedin, FaPhp, FaPython, FaReact } from 'react-icons/fa';
+import { VscVscode } from "react-icons/vsc";
+import { SiMysql, SiPycharm, SiSqlite, SiFlask, SiJupyter } from 'react-icons/si';
+import "react-tooltip/dist/react-tooltip.css";
+
 
 
 
@@ -23,10 +28,22 @@ const Home = () => {
             <br/>
             <h2 className='green_text'>Tools and Technologies</h2>
             <div className='tech_stack'>
-                <FaPython size={tech_stack_size}/>
-                <FaReact size={tech_stack_size}/>
-                <FaHtml5 size={tech_stack_size}/>
-                <FaPhp size={tech_stack_size}/>
+                {/* languages */}
+
+                <FaPython data-tooltip-id="tooltip" data-tooltip-content="Python" size={tech_stack_size}/>
+                <SiFlask data-tooltip-id="tooltip" data-tooltip-content="Flask" size={tech_stack_size}/>
+                <SiSqlite data-tooltip-id="tooltip" data-tooltip-content="SQLite" size={tech_stack_size}/>
+                <SiMysql data-tooltip-id="tooltip" data-tooltip-content="MySQL" size={tech_stack_size}/>
+                <FaReact data-tooltip-id="tooltip" data-tooltip-content="React" size={tech_stack_size}/>
+                <FaHtml5 data-tooltip-id="tooltip" data-tooltip-content="HTML5" size={tech_stack_size}/>
+                <FaPhp data-tooltip-id="tooltip" data-tooltip-content="PHP" size={tech_stack_size}/>
+
+                {/* IDEs */}
+                <VscVscode data-tooltip-id="tooltip" data-tooltip-content="VS Code" size={tech_stack_size}/>
+                <SiPycharm data-tooltip-id="tooltip" data-tooltip-content="PyCharm" size={tech_stack_size}/>
+                <SiJupyter data-tooltip-id="tooltip" data-tooltip-content="Jupyter Notebook" size={tech_stack_size}/>
+
+                <Tooltip id="tooltip" place="bottom" effect="solid"/>
             </div>
 
             <br /><br /><br /><br /><br /><br /><br />
