@@ -18,12 +18,18 @@ html, body, #root {
    --background_colour: #333;
    --primary_colour: #00ff00;
    --font_colour: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .app_light{
    --background_colour: #ffffff;
    --primary_colour: #ff00f2;
    --font_colour: #000000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .home .green_text {
@@ -52,14 +58,6 @@ html, body, #root {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #f2f2f2;
-  background-color: var(background_colour);
-}
-
-
-.App  {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   background-color: var(--background_colour);
 }
 
@@ -108,6 +106,10 @@ html, body, #root {
 
 .repo-preview a {
   text-decoration: none;
+}
+
+.repo-details {
+  color: var(--primary_colour)
 }
 
 /* footer */
