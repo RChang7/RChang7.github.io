@@ -51,6 +51,13 @@ html, body, #root {
   gap: 9px;
 }
 
+.home button{
+  outline: none;
+  padding:0px 0px 0px 0px;
+  border: none;
+  cursor: pointer;
+}
+
 /* navbar */
 .navbar {
   width: 100%;
