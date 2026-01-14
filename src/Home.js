@@ -1,9 +1,7 @@
 import { useState } from 'react';
 import RepoList from './RepoList'
 import useFetch from './useFetch'
-import PythonLanguage from './PythonLanguage'
-import JavascriptLanguage from './JavascriptLanguage'
-import DatabasesLanguage from './DatabasesLanguage';
+import {DatabasesLanguage, PythonLanguage, JavascriptLanguage} from './LanguageEcosystems';
 
 import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip } from 'react-tooltip';
