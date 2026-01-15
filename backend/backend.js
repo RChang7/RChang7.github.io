@@ -4,7 +4,7 @@ import cors from "cors";
 const app = express();
 const port = 5000;
 const cors_option = {
-    origin: 'http://ryanstchang.dev', 
+    origin: ['http://ryanstchang.dev', 'http://localhost:3000'], 
     optionsSuccessStatus: 200
 }
 
