@@ -5,7 +5,7 @@ import useFetch from './useFetch'
 
 const AllRepos = () => {
     
-    const{data: repos, isPending, error} = useFetch('https://api.github.com/users/RChang7/repos');
+    const{data: repos, isPending, error} = useFetch('http://3.24.62.163:5000/repos');
 
 
     return (  
