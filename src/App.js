@@ -12,15 +12,15 @@ function App() {
 
   const [isDarkMode, setDarkMode] = useState(true)
 
-
+  const backend_url = "https://api.ryanstchang.dev"
   return (
       <div className = {isDarkMode ? "app_dark" : "app_light"}>
         <Navbar isDarkMode={isDarkMode} toggleThemeSwitch={() => setDarkMode(!isDarkMode)
         }/>
         <div className="content">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/allrepos" element={<AllRepos />} />
+            <Route path="/" element={<Home backend_url={backend_url} />} />
+            <Route path="/allrepos" element={<AllRepos backend_url={backend_url} />} />
             <Route path="/about" element={<About />} />
             <Route path="/allrepos/:name" element={<RepoDetails />} />
             <Route path="*" element={<NotFound />} />

@@ -3,9 +3,9 @@ import useFetch from './useFetch'
 
 
 
-const AllRepos = () => {
+const AllRepos = (backend_url) => {
     
-    const{data: repos, isPending, error} = useFetch('http://3.24.62.163:5000/repos');
+    const{data: repos, isPending, error} = useFetch(backend_url.backend_url + '/repos');
 
 
     return (  
