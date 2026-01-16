@@ -2,7 +2,7 @@ import express from 'express';
 import cors from "cors";
 
 const app = express();
-const port = 443;
+const port = 80;
 const cors_option = {
     origin: ['http://ryanstchang.dev', 'http://localhost:3000'], 
     optionsSuccessStatus: 200
