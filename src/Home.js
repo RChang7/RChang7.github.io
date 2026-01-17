@@ -12,9 +12,9 @@ import { VscVscode } from "react-icons/vsc";
 
 
 
-const Home = (backend_url) => {
+const Home = ({backend_url}) => {
     
-    const{data: Repos, isPending, error} = useFetch(backend_url.backend_url + '/repos');
+    const{data: Repos, isPending, error} = useFetch(backend_url + '/repos');
     const contact_button_size = 30
     const tech_stack_size = 50
     const [activeLanguage, setActiveLanguage] = useState("python");

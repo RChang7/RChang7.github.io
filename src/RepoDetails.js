@@ -3,7 +3,7 @@ import useFetch from "./useFetch";
 
 const RepoDetails = () => {
     const { name } = useParams();
-    const { data: repo, error, isPending } = useFetch('https://api.github.com/repos/RChang7/' + name);
+    const { data: repo, error, isPending } = useFetch('https://api.ryanstchang.dev/repos/' + name);
 
 
     return (
