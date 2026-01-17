@@ -17,6 +17,13 @@ app.get('/repos', (req, res) => {
             .then(data => {res.json(data)})
 });
 
+app.get('/repos/:name', (req, res) => {
+    const { name } = req.params;
+    fetch('https://api.github.com/repos/RChang7/' + name)
+        .then(res => res.json())
+            .then(data => {res.json(data)})
+});
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
